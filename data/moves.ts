@@ -13685,12 +13685,27 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	payday: {
 		num: 6,
 		accuracy: 100,
-		basePower: 40,
+		basePower: 60,
 		category: "Physical",
 		name: "Pay Day",
 		pp: 20,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
+		onModifyType(move, pokemon) {
+			switch (pokemon.species.name) {
+			case 'Persian-Alola':
+				move.type = 'Dark';
+				break;
+			case 'Perrserker':
+				move.type = 'Steel';
+				break;
+			}
+		},
+		onModifyMove(move, pokemon) {
+			if (pokemon.species.name === 'Persian-Alola' || pokemon.species.name === 'Perrserker') {
+				move.basePower = 90;
+			}
+		},
 		secondary: null,
 		target: "normal",
 		type: "Normal",
@@ -19260,7 +19275,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	surf: {
 		num: 57,
 		accuracy: 100,
-		basePower: 90,
+		basePower: 95,
 		category: "Special",
 		name: "Surf",
 		pp: 15,

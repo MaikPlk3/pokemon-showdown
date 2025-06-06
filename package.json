@@ -49,17 +49,15 @@
     "full-test-ci": "eslint --max-warnings 0 && tsc && (([ \"$SKIPSIMTESTS\" = true ] && mocha --timeout 8000 --forbid-only -g \".*\" --exclude \"test/{sim,random-battles}/**\") || mocha --timeout 8000 --forbid-only -g \".*\") && npm run test-npm",
     "postinstall": "npm run build postinstall"
   },
-  "bin": "./pokemon-showdown",
+  "bin": {
+    "pokemon-showdown": "pokemon-showdown"
+  },
   "homepage": "http://pokemonshowdown.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/smogon/pokemon-showdown.git"
+    "url": "git+https://github.com/smogon/pokemon-showdown.git"
   },
-  "author": {
-    "name": "Guangcong Luo",
-    "email": "guangcongluo@gmail.com",
-    "url": "http://guangcongluo.com"
-  },
+  "author": "Guangcong Luo <guangcongluo@gmail.com> (http://guangcongluo.com)",
   "contributors": [
     {
       "name": "Bill Meltsner",
@@ -84,5 +82,12 @@
     "smogon": "^3.0.0",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.24.1"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "bugs": {
+    "url": "https://github.com/smogon/pokemon-showdown/issues"
   }
 }

@@ -12606,6 +12606,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uproar: ["9M", "9L26", "7T", "7L29", "6T", "6L23", "5T", "5L23", "4T", "4L23", "3L38"],
 			whirlwind: ["7V"],
 			workup: ["7M", "5M"],
+			uturn: ["9E"],
 		},
 		eventData: [
 			{generation: 3, level: 34, moves: ["batonpass", "drillpeck", "agility", "triattack"]},
@@ -59590,6 +59591,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uproar: ["9M"],
 			workup: ["8M", "7M", "5M"],
 			zenheadbutt: ["9M", "8M", "7T", "6T", "5T"],
+			bodypress: ["9E"],
 		},
 		eventData: [
 			{generation: 5, level: 50, gender: "M", nature: "Brave", abilities: ["moxie"], moves: ["firepunch", "payback", "drainpunch", "substitute"], pokeball: "cherishball"},
@@ -66816,6 +66818,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			weatherball: ["9M", "8M"],
 			wildcharge: ["9M", "8M", "7M", "6M", "5M"],
 			zenheadbutt: ["9M", "9L24", "8M", "8L24", "7T", "7L43", "7S4", "7S5", "6T", "6L43", "6S3", "5T", "5L43", "5S0", "5S1"],
+			thunderouskick: ["9E"]
 		},
 		eventData: [
 			{generation: 5, level: 50, moves: ["dragonbreath", "slash", "zenheadbutt", "fusionbolt"]},
